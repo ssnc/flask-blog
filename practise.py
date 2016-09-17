@@ -5,27 +5,8 @@ from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
 render_template, flash
 
-####
 app = Flask(__name__)
 
-'''#url根路由
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-#带参数的url路由
-@app.route('/user/<username>')
-def hi_user(username):
-    return 'hi %s'% username
-
-#带数据类型限制的url路由
-@app.route('/username/<int:username>')
-def hello_users(username):
-    return 'hello %s' % username
-
-#url如果是一个文件夹，加/和不加/都是一样的，系统会自动添加，如果是一个文件，加了/之后就会报错
-
-'''
 app.config.update(dict(
     DATABASE = os.path.join(app.root_path, 'practise.db'),
     DEBUG = True,
