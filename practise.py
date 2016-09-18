@@ -1,6 +1,7 @@
 # _*_ coding:utf-8 _*_
 
 import os
+import pdb
 from sqlite3 import dbapi2 as sqlite3
 from flask import Flask, request, session, g, redirect, url_for, abort, \
 render_template, flash
@@ -15,7 +16,8 @@ app.config.update(dict(
     PASSWORD = 'default'
 ))
 
-app.config.from_envvar('FLASKR_SETTINGS',silent=True)
+app.config.from_object(__name__)
+#app.config.from_envvar('FLASKR_SETTINGS',silent=True)
 
 def connect_db():
     rv = sqlite3.connect(app.config['DATABASE'])
@@ -25,7 +27,7 @@ def connect_db():
 def init_db():
     with app.app_context():
         db = get_db()
-    with app.open_resource('schema.sql',mode='r') as f:
+    with app.open_resource('schema.sql', mode='r') as f:
         db.cursor().executescript(f.read())
     db.commit()
 
@@ -45,15 +47,17 @@ def close_db(error):
         g.sqlite_db.close()
 
 #视图
-
 @app.route('/')
+def index():
+    return render_template('index.html')
+'''
 def show_entries():
     db = get_db()
-    cur = db.execute('select title,text from entries order by id desc')
+    cur = db.execute('select title, text from entries order by id desc')
     entries = cur.fetchall()
-    return render_template('show_entries.html',entries=entries)
-
-@app.route('/add',methods=['POST'])
+    return render_template('show_entries.html', entries=entries)
+'''
+@app.route('/add', methods=['POST'])
 def add_entry():
     if not session.get('logged_in'):
         abort(401)
@@ -74,8 +78,6 @@ def login():
             error = 'Invalid password'
         else:
             session['logged_in'] = True
-            flash('You were logged in')
-            return redirect (url_for('show_entries'))
     return render_template('login.html',error=error)
 
 @app.route('/logout')
