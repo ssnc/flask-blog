@@ -9,8 +9,347 @@
 </head>
 
 <body>
+<div class="container">
+    {#     clearfix 清除元素的浮动，在大屏幕转换成小屏幕的时候用于列对齐#}
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            {#            nav是导航栏的意思，nav作为一个实例会继承navbar和navbar-default#}
+            {#            role="navigation"  定义一个角色，方便浏览器对功能的识别，告诉浏览器这是一个导航的容器，是一个导航的角色#}
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">www.snc.com</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">系统</a>
+                        </li>
+                        <li>
+                            <a href="#">网络</a>
+                        </li>
+                        <li>
+                            <a href="#">开发</a>
+                        </li>
+
+                        <li>
+                            <a href="#">安全</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input class="form-control" type="text" />
+                        </div> <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="jumbotron">
+                <h1>
+                    Hello, world!
+                </h1>
+                <p>
+                    This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+        <div class="col-md-4 column">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+        <div class="col-md-4 column">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+    </div>
+</div>
 
 
 
 </body>
 </html>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-sm-3 col-md-3 column">
+			<div id="header">
+				<div class="topAD">
+					专业、专注、专心
+				</div>
+				<div class="logo">
+					Layoutit.cn
+				</div>
+			</div>
+
+		</div>
+		<div class="col-sm-9 col-md-9 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">切换导航</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a rel="nofollow" class="navbar-brand" href="#">导航</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a rel="nofollow" href="#">链接</a>
+						</li>
+						<li>
+							<a rel="nofollow" href="#">链接</a>
+						</li>
+						<li class="dropdown">
+							 <a rel="nofollow" href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a rel="nofollow" href="#">列表一</a>
+								</li>
+								<li>
+									<a rel="nofollow" href="#">列表二</a>
+								</li>
+								<li>
+									<a rel="nofollow" href="#">列表三</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a rel="nofollow" href="#">更多列表</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a rel="nofollow" href="#">更多列表</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input class="form-control" type="text" />
+						</div> <button type="submit" class="btn btn-default">搜索</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a rel="nofollow" href="#">链接</a>
+						</li>
+						<li class="dropdown">
+							 <a rel="nofollow" href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a rel="nofollow" href="#">列表一</a>
+								</li>
+								<li>
+									<a rel="nofollow" href="#">列表二</a>
+								</li>
+								<li>
+									<a rel="nofollow" href="#">列表三</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a rel="nofollow" href="#">更多列表</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a rel="nofollow" href="#">更多列表</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="articleContent">
+				<h3 class="title">
+					layoutit-bootstrap layout可视化布局系统
+				</h3>
+				<div class="property">
+					 <span>文章来源：互联网</span> <span>作者：大L</span> <span>发布时间：2013年12月03日</span> <span>点击数：25</span> <span>【字号：<a rel="nofollow" class="fontZoomA" href="javascript:fontZoomA();">小</a><a class="fontZoomB" href="javascript:fontZoomB();">大</a>】</span>
+				</div>
+				<div id="contentTxt">
+					<p>
+						<img src="skin/images/banner1.jpg" alt='' />
+					</p>
+					<p>
+						lbootstrap layout可视化布局系统(layoutit)是一款可在线拖放排序、在线编辑的bootstrap可视化编辑器，通过该工具你可以通过拖放的形式的实现在线编辑基于bootstrap的html模板，并可直接生成模板，生成的模板可以直接下载。
+					</p>
+					<p>
+						lbootstrap layout可视化布局系统(layoutit)是一款可在线拖放排序、在线编辑的bootstrap可视化编辑器，通过该工具你可以通过拖放的形式的实现在线编辑基于bootstrap的html模板，并可直接生成模板，生成的模板可以直接下载。
+					</p>
+					<p>
+						lbootstrap layout可视化布局系统(layoutit)是一款可在线拖放排序、在线编辑的bootstrap可视化编辑器，通过该工具你可以通过拖放的形式的实现在线编辑基于bootstrap的html模板，并可直接生成模板，生成的模板可以直接下载。
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+					<ul class="infoList">
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="bootstrap可视化布局工具" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="bootstrap可视化布局" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-md-4 column">
+					<ul class="infoList">
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="bootstrap可视化布局工具" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="bootstrap可视化布局" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+						<li>
+							 <span class="date">01-02</span> <a rel="nofollow" title="layoutit-bootstrap layout可视化布局系统" href="http://www.layoutit.cn">layoutit可视化布局，布局神器</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="col-md-4 column">
+				</div>
+			</div>
+
+			<div id="footer">
+				<div class="footerNav">
+					 <a rel="nofollow" href="http://www.layoutit.cn">关于我们</a> | <a rel="nofollow" href="http://www.layoutit.cn">服务条款</a> | <a rel="nofollow" href="http://www.layoutit.cn">免责声明</a> | <a rel="nofollow" href="http://www.layoutit.cn">网站地图</a> | <a rel="nofollow" href="http://www.layoutit.cn">联系我们</a>
+				</div>
+				<div class="copyRight">
+					Copyright ©2010-2014layoutit.cn 版权所有
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
